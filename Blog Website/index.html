@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-create</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">iHome</a></li>
+        <li><a href="list.html" target="_blank">iCategory</a></li>
+        <li><a href="write.html" target="_blank">iWrite</a></li>
+        <li><a href="about.html" target="_blank">iAbout</a></li>
+        <li><a href="reach.html" target="_blank">iReach</a></li>
+      </ul>
+    </nav>
+
+    <div id="#home" class="main">    
+    <!-- <img src="Images/1.png" alt="Home Page" />  
+    add flex box 
+  and animation  -->
+   <div style="display: grid;" class="girdmain">
+    <div class="gridSub1" style="grid-row: 1; grid-column: 1">
+      <a href="#"><img src="Images/Contents/name part.png">        
+      </a>
+    </div>
+    <div class="gridSub1" style="grid-row: 1; grid-column: 2"><a href="#">
+      <img src="Images/Contents/main logo.png" =>
+      
+    </a> </div>
+    <div class="gridSub1" style="grid-row: 1; grid-column: 3"><a href="#">
+      <img src="Images/Contents/search icon.png">
+    </a></div>
+    <br>
+    <div class="gridSub1" style="grid-row: 2; grid-column: 1"><a href="#">
+      <img src="Images/Contents/empty.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 2; grid-column: 2"><a href="#">
+      <img src="Images/Contents/writing log.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 2; grid-column: 3"><a href="#">
+      <img src="Images/Contents/empty.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 3; grid-column: 1"><a href="#">
+      <img src="Images/Contents/empty.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 3; grid-column: 2"><a href="#">
+      <img src="Images/Contents/spring.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 3; grid-column: 3"><a href="#">
+      <img src="Images/Contents/empty.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 4; grid-column: 1"><a href="#">
+      <img src="Images/Contents/feeling.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 4; grid-column: 2"><a href="#">
+      <img src="Images/Contents/empty.png">
+    </a></div>
+    <div class="gridSub1" style="grid-row: 4; grid-column: 3"><a href="#">
+      <img src="Images/Contents/random thoughts.png">
+    </a></div>
+  
+  </div>
+    </div>
+
+    <div id="#about" class="main">
+      <!-- <img src="Images/2.png" alt="iAbout Page" /> -->
+    </div>
+    <br />
+
+    <!-- Making a Slide Contianer  -->
+    <div class="sildes-collection">
+      <!-- full images with number and message info  -->
+      <div class="cradle-box">
+        <div class="element-info">1/7</div>
+        <img src="Images/cradle/1.png" alt="blog first" style="width: 100%" />
+        <div class="page-info">First Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">2/7</div>
+        <img src="Images/cradle/2.png" alt="blog second" style="width: 100%" />
+        <div class="page-info">Second Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">3/7</div>
+        <img src="Images/cradle/3.png" alt="Third-Blog" style="width: 100%" />
+        <div class="page-info">Third Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">4/7</div>
+        <img src="Images/cradle/4.png" alt="Fourth-Blog" style="width: 100%" />
+        <div class="page-info">Fourth Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">5/7</div>
+        <img src="Images/cradle/5.png" alt=" Fifth Blog" style="width: 100%" />
+        <div class="page-info">Fifth Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">6/7</div>
+        <img src="Images/cradle/6.png" alt="Sixth " style="width: 100%" />
+        <div class="page-info">Sixth Blog</div>
+      </div>
+
+      <div class="cradle-box">
+        <div class="element-info">7/7</div>
+        <img src="Images/cradle/7.png" alt="blog hint" style="width: 100%" />
+        <div class="page-info">Seventh Blog</div>
+      </div>
+      <!-- For making the Button Back & Next  -->
+      <a class="Back" onclick="SlideShow(-1)">&#8592;</a>
+      <a class="Forward" onclick="SlideShow(1)">&#8594;</a>
+      <br />
+
+      <!-- The Cricle Dots for Count -->
+      <div style="text-align: center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        <span class="dots" onclick="currentSlide(5)"></span>
+        <span class="dots" onclick="currentSlide(6)"></span>
+        <span class="dots" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+
+    <br />
+
+    <div
+      style="
+        display: grid;
+        grid-template-rows: 500x 500px;
+        grid-template-columns: 500px 500px 500px;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+      "
+      class="allGrid"
+    >
+      <!-- grid items go here -->
+      <div style="grid-row: 1; grid-column: 1">
+        <a
+          href="https://understandingyourslf.blogspot.com/2020/10/shattered-mind.html"
+          target="_blank"
+        >
+          <img src="Images/grid/1.png"/>
+        </a>
+      </div>
+      <div style="grid-row: 1; grid-column: 2">
+        <a
+          href="https://understandingyourslf.blogspot.com/2020/09/random-calls.html"
+          target="_blank"
+        >
+          <img src="Images/grid/2.png"/>
+        </a>
+      </div>
+      <div style="grid-row: 1; grid-column: 3">
+        <a
+          href="https://understandingyourslf.blogspot.com/2020/03/yes-i-asked-her.html"
+          target="_blank"
+        >
+          <img src="Images/grid/3.png"/>
+        </a>
+      </div>
+      <div style="grid-row: 2; grid-column: 1">
+        <a
+          href="https://understandingyourslf.blogspot.com/2020/01/confused.html"
+          target="_blank"
+        >
+          <img src="Images/grid/4.png"/>
+        </a>
+      </div>
+      <div style="grid-row: 2; grid-column: 2">
+        <a
+          href="https://understandingyourslf.blogspot.com/2020/01/have-we-lost-ourselves.html"
+          target="_blank"
+        >
+          <img src="Images/grid/5.png"/>
+        </a>
+      </div>
+      <div style="grid-row: 2; grid-column: 3">
+        <a
+          href="https://understandingyourslf.blogspot.com/2019/12/its-ohkay-to-be-weird.html"
+          target="_blank"
+        >
+          <img src="Images/grid/6.png" />
+        </a>
+      </div>
+    </div>
+    <br />
+    <div class="iWriteBox">
+      <button onclick="showiWriteBox()">iWrite to Share</button>
+      <textarea id="iWriteArea" style="display: none">
+ iWrite to i-create</textarea
+      >
+    </div>
+    <br />
+    <div class="footer">
+      <div style="
+          display: grid;
+          grid-template-row: 100px;
+          grid-template-columns: 100px 100px 100px 100px 100px 100px;
+          grid-row-gap: 5px;
+          grid-column-gap: 5px;
+        " class="footGrid">
+        <div style="grid-row: 1; grid-column: 1">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="Images/contact/fb.png.png" />
+          </a>
+        </div>
+        <div style="grid-row: 1; grid-column: 2">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="Images/contact/insta.png.png" />
+          </a>
+        </div>
+        <div style="grid-row: 1; grid-column: 3">
+          <a href="https://twitter.com/" target="_blank">
+            <img src="Images/contact/twitter.png.png" />
+          </a>
+        </div>
+        <div style="grid-row: 1; grid-column: 4">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="Images/contact/whatsapp.png.png" />
+          </a>
+        </div>
+        <div style="grid-row: 1; grid-column: 5">
+          <a href="https://www.pinterest.com/" target="_blank">
+            <img src="Images/contact/pinterst.png.png" />
+          </a>
+        </div>
+        <div style="grid-row: 1; grid-column: 6">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="Images/contact/youtube.png.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>

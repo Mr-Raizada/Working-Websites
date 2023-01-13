@@ -1,0 +1,223 @@
+nav {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border-color: grey;
+  text-decoration-color: aliceblue;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  padding-left: 45em;
+}
+
+nav li {
+  font-size: 1.7em;
+  margin-right: 30px;
+  border-color: white;
+  float: right;
+  background-color: black;
+  padding: 1%;
+  border-radius: 20%;
+}
+nav a {
+  color: orange;
+  text-decoration: none;
+  float: right;
+}
+nav a:hover {
+  color: red;
+}
+
+.main: {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.gridmain{
+  display: grid;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+} 
+
+/* .gridSub1{
+  display: grid;
+  border: black solid 1px ;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10px; */
+
+.gridSub1 img {
+height: auto ;
+width: auto;
+}
+
+.slides-collection {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.cradle-box {
+  display: none;
+}
+
+.Back,
+.Forward {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: gray;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the Forward button at the right*/
+.Forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+/* When the user hovers, add a black background with some little opacity*/
+.Back:hover .Forward:hover {
+  background-color: red(0, 0, 0, 0.8);
+}
+
+/* Caption Info - pageinfo*/
+
+.page-info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Working of numbers to deal with it */
+.element-info {
+  color: #f2f2f3;
+  font-size: 50px;
+  padding: 10px 14px;
+  position: relative;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3 px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+  background-color: #717161;
+}
+
+/* Faint Animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+.allgrid {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-row-gap: 10px; /* adds a 10px gap between rows */
+  grid-column-gap: 20px; /* adds a 20px gap between columns */
+}
+
+.allGrid a {
+  border: none;
+}
+.allGrid img {
+  width: 450px;
+  height: 450px;
+  border: 2px solid black;
+}
+.allGrid {
+  margin: 5%;
+}
+.iWriteBox{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+  
+    
+}
+.iWriteBox button{
+    padding: 3%;
+    border-radius: 5%;
+    left: 50%;
+    position: relative;
+    border: black solid 0.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+.iWriteArea{
+    display: block;
+    width: 850px;
+    height: 101px;
+    border: black solid 1px;
+
+}
+
+.footer{
+      background-color: orange;
+      color: #fff;
+      padding: 80px;
+      text-align: center;
+}
+.footGrid a {
+    border: none;
+
+  }
+  .footGrid img {
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+  }
+  .footGrid {
+    margin: auto;
+    position: relative;
+    text-align: right;
+    padding: 0px;
+    left: 52%;
+  }
