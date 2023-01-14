@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>i-create</title>
     <link rel="stylesheet" href="CSS/style.css">
+
 </head> 
 <body>
    <nav>
@@ -17,12 +18,64 @@
         <li> <a href="#reach">iReach</a></li>
     </ul>
    </nav> 
+
    <div class="iWriteBox">
     <button onclick="showiWriteBox()">iWrite to Share</button>
     <textarea id="iWriteArea" style="display: none"> iWrite to i-create</textarea>
   </div>
+  <h1>iContact</h1>
+  <p id="description">To Connect and share the idea of icreate to the world<p>
+    <form id="survey-form">
+      <div class="from-group">
+      <label id="name-label" for="name"> Name</label> 
+     <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name" required="">
+      </div>
+      <div class="from-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" class="form-control" type="text" name="email" placeholder="Enter Your E-Mail" required="">
+      </div>
+      <div class="form-group">
+      <label id="number-label" for="number">Age(Optional)</label>
+      <input id="number" class="from-control"
+      type="number" name="age" min="15" max="90" placeholder="Enter Your Age">
+      <div class="form-group">
+      </div>
+      <div class="form-group">
+        <p> Purpose of Contact</p>
+        <select id="dropdown" class="from-control" name="purpose" required="">
+          <option disabled="" selected="" value="">Select the current Purpose</option>
+          <option value="official">Official</option>
+          <option value="non-official">Non-Official</option>
+          <option value="interest">For Interset</option>
+          <option value="hello">To Say Hello</option>
+          <option value="other">Others</option>
+        </select>
+      </div>
+      <div class="from-group">
+      <p>What do you think about the iwrite?<p>
+         <label><input type="radio" name="thought-about" class="input-radio" value="Good" checked=""> Good</label>
+         <label><input type="radio" name="thought-about" class="input-radio" value="Better" > Better</label>
+         <label><input type="radio" name="thought-about" class="input-radio" value="Best"> Best</label>
+         <label><input type="radio" name="thought-about" class="input-radio" value="Not-Good">Not Good</label>
+         <label><input type="radio" name="thought-about" class="input-radio" value="Bad"> Bad</label>
+      </div>
+      <div class="form-group">
+      <p>Where to Improve?</p>
+      <label><input type="checkbox" class="input-checkbox" name="improvement" value="Content"> Content</label>
+      <label><input type="checkbox" class="input-checkbox" name="improvement" value="representation"> Representation</label>
+      <label><input type="checkbox" class="input-checkbox" name="improvement" value="Accessibilty"> Accessibilty</label>
+      <label><input type="checkbox" class="input-checkbox" name="improvement" value="Language"> Language</label>
+      </div>
+      <div class="from-group">
+        <p>Any Suggestions or Comments</p>
+        <textarea id="comments" class="input-textarea" name="comments" placeholder="Place your comments here..."></textarea>
+      </div>
+      <br>
+      <div class="from-group">
+        <button id="submit" class="submit-button" type="submit">Submit</button>
+      </div>
+    </form>
 
-   <img src="Images/6.png" alt="Home Page">
     <script src = "Javascript/script.js"></script>
 </body>
 </html>
